@@ -20,4 +20,13 @@ using namespace std;
  **/
 bool readIDs ( const string& filename, const string& dl, set < string >& v_id );
 
+/**
+ *@fn bool removeIDs ( const string& filename, const string& output_file, const set < string >& v_id )
+ *
+ *@param filename Community file to read
+ *@param dl Delimiter for the community file
+ *@param v_id Set of vertex IDs that should be replaced by 'UNKNOWN'
+ **/
+bool removeIDs ( const string& filename, const string& output_file, const set < string >& v_id );
+
 #endif
